@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-kazay-base: #0B0B0B;
+  --color-kazay-primary: #00FF88;
+  --color-kazay-secondary: #1A1A1A;
+  
+  --font-outfit: "Outfit", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+/* Base styles using @layer base or just plain CSS */
+@layer base {
+  body {
+    background-color: var(--color-kazay-base);
+    color: white;
+    font-family: var(--font-inter);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-outfit);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-kazay-primary text-kazay-base font-bold py-3 px-8 rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,136,0.5)] hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-kazay-secondary text-white font-bold py-3 px-8 rounded-full border border-gray-800 transition-all duration-300 hover:bg-gray-800 hover:scale-105 active:scale-95;
+  }
+
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-extrabold mb-8 uppercase tracking-tighter;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-kazay-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 255, 136, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 255, 136, 0.5);
+}
