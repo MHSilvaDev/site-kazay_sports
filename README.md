@@ -2,7 +2,7 @@
 
 Bem-vindo ao repositório da **Kazay Sports**, uma landing page de e-commerce moderna, responsiva e altamente profissional, desenvolvida para proporcionar uma experiência de compra premium no nicho de artigos esportivos.
 
-![Hero Section Preview](https://github.com/MHSilvaDev/site-kazay_sports/raw/main/public/preview.png) *(Placeholder para imagem de preview)*
+![Hero Section Preview](images/preview.png) *(Placeholder para imagem de preview)*
 
 ## 🚀 Tecnologias Utilizadas
 
